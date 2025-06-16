@@ -26,6 +26,15 @@
       text-align: center;
     }
 
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #000; /* Preto para contraste na caixa verde */
+    }
+
     header img {
       max-height: 60px;
       max-width: 90%;
@@ -80,22 +89,23 @@
 </head>
 <body>
   <header>
-    <!-- Substitua pela URL da sua logo -->
-    <img src="https://i.postimg.cc/WpmZ0mQw/C-11.png" alt="Logo">
+    <div class="header-content">
+      <!-- Troque pelo link da sua logo -->
+      <img src="https://i.postimg.cc/WpmZ0mQw/C-11.png" alt="Logo da Empresa">
+      <h2>Bem-vindo ao mundo Wick! 💜 </h2> <!-- Texto dentro da caixa verde -->
+    </div>
   </header>
 
   <main>
-    <h1>Bem-vindo ao mundo Wick! 💜 </h1>
+    <h1></h1>
 
     <div class="link-images">
-      <!-- Exemplo de imagem com link -->
       <a href="http://wa.me/5562992306000" target="_blank">
         <img src="https://i.postimg.cc/3JQS9ZSS/9-MILHOES-V1-FE-ED.png" alt="Link 1">
       </a>
       <a href="http://wa.me/5562992306000" target="_blank">
         <img src="https://i.postimg.cc/BZ7ZKXmn/modem-1x1.png" alt="Link 2">
       </a>
-      <!-- Adicione mais se quiser -->
     </div>
   </main>
 
