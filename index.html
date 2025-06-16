@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atendimento - Chat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2e0a4a; /* Roxo escuro */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #00ff99; /* Verde */
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 60px;
+      max-width: 90%;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .link-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .link-images a {
+      display: block;
+      max-width: 200px;
+      width: 100%;
+      transition: transform 0.3s;
+    }
+
+    .link-images a:hover {
+      transform: scale(1.05);
+    }
+
+    .link-images img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ff99aa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .link-images {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Substitua pela URL da sua logo -->
+    <img src="https://i.postimg.cc/WpmZ0mQw/C-11.png" alt="Logo">
+  </header>
+
+  <main>
+    <h1>Bem-vindo! Clique no botão de chat no canto da tela ou acesse os links abaixo:</h1>
+
+    <div class="link-images">
+      <!-- Exemplo de imagem com link -->
+      <a href="http://wa.me/5562992306000" target="_blank">
+        <img src="https://i.postimg.cc/3JQS9ZSS/9-MILHOES-V1-FE-ED.png" alt="Link 1">
+      </a>
+      <a href="http://wa.me/5562992306000" target="_blank">
+        <img src="https://i.postimg.cc/BZ7ZKXmn/modem-1x1.png" alt="Link 2">
+      </a>
+      <!-- Adicione mais se quiser -->
+    </div>
+  </main>
+
+  <!-- Chat Movidesk -->
+  <script type="text/javascript">
+    var mdChatClient = "AD82466227E64545BB65F08D1D1B74AE";
+  </script>
+  <script src="https://chat.movidesk.com/Scripts/chat-widget.min.js"></script>
+  <!-- Fim do chat -->
+</body>
+</html>
