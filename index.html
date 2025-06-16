@@ -64,17 +64,16 @@
 
     .link-images {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column; /* Celular: imagens embaixo */
+      align-items: center;
+      gap: 20px;
       margin-top: -10px;
-      gap: 10px; /* Espaço padrão (mobile) */
     }
 
     .link-images a {
-      flex: 1 1 45%;
+      width: 90%;
     }
 
-    /* Zoom automático nas imagens */
     @keyframes zoom {
       0% {
         transform: scale(1);
@@ -94,21 +93,18 @@
       animation: zoom 4s ease-in-out infinite;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 18px;
-      }
-    }
-
-    /* Ajustes para telas maiores (desktop) */
     @media (min-width: 768px) {
       .link-images {
-        gap: 30px; /* Mais espaçamento no desktop */
+        flex-direction: row; /* PC: imagens lado a lado */
+        justify-content: center;
       }
 
       .link-images a {
-        max-width: 200px;
-        flex: 0 0 200px;
+        width: 200px;
+      }
+
+      .link-images {
+        gap: 30px;
       }
     }
   </style>
@@ -141,4 +137,3 @@
   <script src="https://chat.movidesk.com/Scripts/chat-widget.min.js"></script>
 </body>
 </html>
-
