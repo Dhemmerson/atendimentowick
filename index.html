@@ -67,15 +67,14 @@
       flex-wrap: wrap;
       justify-content: center;
       margin-top: -10px;
-      gap: 10px;
+      gap: 10px; /* Espaço padrão (mobile) */
     }
 
     .link-images a {
       flex: 1 1 45%;
-      max-width: 45%;
     }
 
-    /* Animação de zoom automático */
+    /* Zoom automático nas imagens */
     @keyframes zoom {
       0% {
         transform: scale(1);
@@ -100,6 +99,18 @@
         font-size: 18px;
       }
     }
+
+    /* Ajustes para telas maiores (desktop) */
+    @media (min-width: 768px) {
+      .link-images {
+        gap: 30px; /* Mais espaçamento no desktop */
+      }
+
+      .link-images a {
+        max-width: 200px;
+        flex: 0 0 200px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -117,7 +128,6 @@
       <a href="http://wa.me/5562992306000" target="_blank">
         <img src="https://i.postimg.cc/3JQS9ZSS/9-MILHOES-V1-FE-ED.png" alt="Link 1">
       </a>
-      </a>
       <a href="http://wa.me/5562992306000" target="_blank">
         <img src="https://i.postimg.cc/BZ7ZKXmn/modem-1x1.png" alt="Link 2">
       </a>
@@ -131,3 +141,4 @@
   <script src="https://chat.movidesk.com/Scripts/chat-widget.min.js"></script>
 </body>
 </html>
+
