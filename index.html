@@ -64,18 +64,18 @@
 
     .link-images {
       display: flex;
-      flex-direction: column; /* Celular */
+      flex-direction: column;
       align-items: center;
       gap: 20px;
     }
 
     .link-images a {
-      width: 90%; /* Ocupa boa parte da largura em telas menores */
+      width: 90%;
     }
 
     .link-images img {
       width: 100%;
-      height: auto; /* Mantém proporção original da imagem */
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 0 10px #00ff99aa;
       animation: zoom 5s ease-in-out infinite;
@@ -95,12 +95,13 @@
 
     @media (min-width: 768px) {
       .link-images {
-        flex-direction: row; /* PC: imagens lado a lado */
+        flex-direction: row;
         justify-content: center;
+        gap: 40px; /* Espaçamento aumentado entre imagens no PC */
       }
 
       .link-images a {
-        width: 400px; /* Largura ideal para imagem 1600x400 (4:1) */
+        width: 400px;
       }
     }
   </style>
@@ -118,10 +119,10 @@
 
     <div class="link-images">
       <a href="http://wa.me/5562992306000" target="_blank">
-        <img src="https://i.postimg.cc/0NFPS0pq/Untitled-design.png" alt="Banner 1">
+        <img src="https://i.postimg.cc/mgWsbDTB/BAZONA-2025-fundo.png" alt="Banner 1">
       </a>
       <a href="http://wa.me/5562992306000" target="_blank">
-        <img src="https://i.postimg.cc/0NFPS0pq/Untitled-design.png" alt="Banner 2">
+        <img src="https://i.postimg.cc/x1jSkZN4/BAZONA-2025-fundo-2.png" alt="Banner 2">
       </a>
     </div>
   </main>
